@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--Stylesheets -->
+    <!--Stylesheets <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/custom-icons.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,500,100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://azalea.com/web-fonts/Code39Azalea.min.css">
+    <!--jQuery library -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <!--jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
+    <link href="css/material.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+   
+    <!--home page -->
+    <div data-role="page" id="home-page">
+        <!-- /header -->
+        <div data-role="main" class="ui-content">
+            <h1 class="h1-custom">WELCOME TO RAND SHOW 2015</h1>
+            <div class="add-pad-top"></div>
+            <p style="font-weight:300; font-size:14px;" class="txt-center">The <b>Rand Show</b> is destined to give fun and fiesta with the presence of attractive events, stunt performances, stage performances, animals zone, competitions and contests and other fun activities.</p>
+            <div class="add-pad-top"></div>
+            <a href="#planner-page" data-role="button" style="margin: 0 auto;" class="ui-shadow" data-theme="a">
+             Get Started <i class="fa fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+    <!--end homepage -->
+    <!--Planer Page -->
+    <div data-role="page" id="planner-page">
+        <div data-role="header" class="headers-custom">
+            <h2 class="h1-custom">PLANNER</h2>
+            <a href="#shows-page" class="ui-btn ui-btn-right ui-icon-fa-my-right-white ui-btn-icon-right ui-nodisc-icon topBtn">Shows</a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-body ui-body-a">
+            <i class="fa fa-bookmark fa-3x" style="color:#F8BBD0; margin-top:-12px;"></i>
+           
+                  <h2 class="accent-color-indigo"><i class="fa fa-clock-o"></i> 4 Days Left</h2>
+            
+            <h3 class="accent-color-indigo"><i class="fa fa-cloud"></i> 20 &#176;</h3>
+         
+                <ol data-role="listview" class="txt-center" data-theme="a" id="plannerList">
+                    
+                    <li>
+                        <p>Browse through the shows page</p>
+                    </li>
+                    <li>
+                        <p>Simply double tap on the place of intrest
+                            <br> you wish to attend</p>
+                    </li>
+                    <li>
+                        <p> You selections should now appear here.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#planner-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myalert">Planner</a>
+                    </li>
+                    <li><a href="#shows-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myevent">Events</a>
+                    </li>
+                    <li><a href="#map-page" class="btn-nav ui-nodisc-icon" data-icon="fa-my-ticket">Tickets</a>
+                    </li>
+                    <li><a href="#map-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myplane">Map</a>
+                    </li>
+                    <li> <a href="#help-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myhelp">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Planner Page-->
+
+    <!--ShowsPage -->
+    <div data-role="page" id="shows-page">
+        <div data-role="panel" id="event-details" style="min-height:70px;margin-top:56px; width:60%;" data-position="right" data-theme="a" data-display="overlay">
+            <h1>Add Event</h1>
+
+                   
+                    <br>
+
+                    <label for="birthdate">Event Name:</label>
+                    <input type="text" data-clear-btn="false" id="date-input" data-inline="true" placeholder="Pick Date" name="myEvent">
+                    <br>
+
+                    <label for="email">Date:</label>
+                    <input type="text" data-clear-btn="false" name="myDate" placeholder="Pick Date">
+                    <br>
+
+                    <label for="myNotes">Notes:</label>
+                    <input type="text" data-clear-btn="false" name="myNotes" placeholder="Enter Notes">
+                    <br>
+
+<a href="#" class="ui-btn ui-nodisc-icon" data-icon="fa-myalert">Save</a>
+
+        </div>
+        <div data-role="header" data-position="fixed" class="headers-custom">
+            <a href="#planner-page" class="topBtn ui-btn ui-icon-fa-myleft-white ui-btn-icon-left ui-btn-icon-notext ui-nodisc-icon "></a>
+            <h1 class="h1-custom">EVENTS</h1>
+            <a href="#ticket-page" class="topBtn ui-btn ui-icon-fa-my-right-white ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon topBtn"></a>
+        </div>
+        <div class="ui-content">
+          
+            <ol data-role="listview" id="show-events" data-theme="a" data-filter="true">
+                <li data-name="3A Cold-rooms & Aircons" class="ui-shadow" data-icon="fa-my-right-white">
+                    <a href="#event-details" class="events-list">
+                        <img src="img/flower.png" class="listImage" alt="" />
+                        <h2>3A Cold-rooms & Aircons</h2>
+                        <p>Patio & Outdoor Furniture</p>
+ <p><b>FOOD STALL</b></p>
+                           
+                        <p><b>April 15</b></p>
+                         <p><b>3pm - 4pm</b></p>
+
+                    </a>
+                </li>
+                 <div class="add-pad-top"></div>
+                <li class="ui-shadow" data-name="African Butterfly Trading cc" data-icon="fa-my-right-white">
+                    <a href="#" class="events-list">
+                        <img src="img/kfc-logo.svg" class="listImage" alt="" />
+                        <h2>African Butterfly Trading</h2>
+                        <p>Cooking Magazines & Websites</p>
+                        <p><b>COMPETITION</b>
+                    </p>
+                        <p><b>April 15</b></p>
+                         <p><b>1pm - 2pm</b></p>
+                    </a>
+                </li>
+                 <div class="add-pad-top"></div>
+                <li class="ui-shadow" data-name="Space & Rocketry" data-icon="fa-my-right-white">
+                    <a href="#" class="events-list">
+                        <img src="img/nasa.svg" class="listImage" alt="" />
+                        <h2>Space & Rocketry</h2>
+                        <p>Science & Technology</p>
+                        <p>Nuclear Energy Corporation SA Sci Bono</p>
+                           <p>SHOW</p>
+                        <p><b>April 15</b></p>
+                         <p><b>3pm - 4pm</b></p>
+                    </a>
+                </li>
+                 <div class="add-pad-top"></div>
+                <li class="#ui-shadow" data-name="Active Import & Export" data-icon="fa-my-right-white">
+                    <a href="#" class="events-list">
+                        <img src="img/bulb.png" class="listImage" alt="" />
+                        <h2>Active Import & Export</h2>
+                        <p>Clothing and Jewellery</p>
+                      <p><b>SHOPPING</b></p>
+                           
+                        <p><b>April 19</b></p>
+                         <p><b>11AM-9PM</b></p>
+                    </a>
+                </li>
+                 <div class="add-pad-top"></div>
+                <li class="ui-shadow" data-icon="fa-my-right-white" data-name="African Butterfly Trading">
+                    <a href="#" class="events-list">
+                        <img src="img/donut.png" class="listImage" alt="" />
+                        <h2>African Butterfly Trading</h2>
+                        <p>Sauces & Pastes</p>
+                        <p><b>FOOD STALL</b></p>
+                           
+                        <p><b>April 20</b></p>
+                         <p><b>9AM-9PM</b></p>
+                    </a>
+                </li>
+                 <div class="add-pad-top"></div>
+                <li class="ui-shadow" data-name="Cuesport Demonstrations" data-icon="fa-my-right-white">
+                    <a href="#" class="events-list">
+                        <img src="img/shirt.png" class="listImage" alt="" />
+                        <h2>Cuesport Demonstrations</h2>
+                        <p>Fashion Accessories</p>
+                               <p><b>SHOPPING</b></p>
+                           
+                        <p><b>April 20</b></p>
+                         <p><b>10AM-9PM</b></p>
+                    </a>
+                </li>
+            </ol>
+             <div class="add-pad-top"></div>
+        </div>
+        <div data-role="footer" data-fullscreen="true" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#planner-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myalert">Planner</a>
+                    </li>
+                    <li><a href="#shows-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myevent">Events</a>
+                    </li>
+                    <li><a href="#ticket-page" class="btn-nav ui-nodisc-icon" data-icon="fa-my-ticket">Tickets</a>
+                    </li>
+                    <li><a href="#map-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myplane">Map</a>
+                    </li>
+                    <li> <a href="#help-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myhelp">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End shows Page-->
+  
+
+    <!--ticketsPage -->
+    <div data-role="page" id="ticket-page">
+
+    <div data-role="panel" id="payment-panel" style="min-height:70px;margin-top:56px; width:60%;" data-position="right" data-theme="a" data-display="overlay">
+            <h1>Payment</h1>
+
+                   
+                    <br>
+<label for="email">Name & Title:</label>
+                    <input type="text" data-clear-btn="false" name="myDate" placeholder="Name On Card">
+                    <br>
+                    <label for="birthdate">Card Number:</label>
+                    <input type="text" data-clear-btn="false" id="date-input" data-inline="true" placeholder="16 Digit Card Number" name="myEvent">
+                    <br>
+
+                    
+
+                    <label for="myNotes">Security Number:</label>
+                    <input type="password" data-clear-btn="false" name="myNotes" placeholder="Security Number">
+                    <br>
+
+<a href="#" class="ui-btn ui-nodisc-icon" data-icon="fa-myalert">Confirm</a>
+
+        </div>
+        <div data-role="header" class="headers-custom">
+            <h1 class="h1-custom">TICKETS</h1>
+            <a href="#shows-page" class="topBtn ui-btn ui-icon-fa-myleft-white ui-btn-icon-left ui-btn-icon-notext ui-nodisc-icon "></a>
+             <a href="#map-page" class="topBtn ui-btn ui-icon-fa-my-right-white ui-btn-icon-right ui-btn-icon-notext ui-nodisc-icon topBtn"></a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h3 class="ui-bar ui-bar-a">South Africa`s largest consumer show</h3>
+            <ul data-role="listview" data-theme="a" data-filter="true">
+                <li data-icon="fa-my-taxi-white" class="libg ui-shadow">
+                    <a href="#payment-panel" id="science_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <div class="left-float">
+                            <h2>Parking</h2>
+                            <p>Location: <b>B6 ZONE V</b>
+                            </p>
+                            <p>Duration: <b>3HRS</b>
+                            </p>
+                            <p class="small-text">VALID UNTIL: 1 AUGUST</p>
+                        </div>
+                        <div class="right-float">
+                            <p style="clear:both;">$7.00</p>
+                            <p class="barcode">*313444*</p>
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </div>
+                    </a>
+                </li>
+                <li data-icon="fa-my-taxi-white" class="libg ui-shadow">
+                    <a href="#" id="food_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <div class="left-float">
+                            <h2 style="font-family:flood-std; color:#880E4F;">AMC COOKWARE</h2>
+                            <h2 style="font-weight:300;">Innovative, unique & awarded</h2>
+                            <h2 style="font-weight:100;">1.30PM - 2.00pm</h2>
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-paypal"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </div>
+                        <div class="right-float">
+                            <h3 style="font-weight:200;">24 - 07 - 15</h3>
+                            <p>
+                                <del>$5.56</del> $1.00</p>
+                            <h3 class="barcode">*12345*</h3>
+                        </div>
+                    </a>
+                </li>
+                <div class="add-pad-top"></div>
+                <li data-icon="fa-buysellads" class="libg ui-shadow">
+                    <a href="#" id="garden_btn" class="ui-nodisc-icon event-item ui-corner-all" style="overflow:hidden;">
+                        <div class="left-float">
+                            <h2 style="font-family:coquette; color:#4A148C;">Habiba Perfumes Middleeast</h2>
+                            <p>Swiss Arabian Perfumes Group
+                                <br>is the WINNER for Fragrance of the Year 2012
+                                <br> Arabian Popular Appeal Female Category
+                                <br>
+                            </p>
+                            <h2 style="font-weight:400;">1.30PM - 2.45PM</h2>
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-paypal"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </div>
+                        <div class="right-float">
+                            <h3 style="font-weight:400;">JUNE 20<sup><small>th</small></sup><hr></h3>
+                            <p>$3.45</p>
+                            <h3 class="barcode">*198444*</h3>
+                        </div>
+                    </a>
+                </li>
+                <div class="add-pad-top"></div>
+                <li data-icon="fa-bus" class="libg ui-shadow">
+                    <a href="#" id="science_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <div class="left-float">
+                            <h2 style="">Parking</h2>
+                            <p>Location: <b>C15 ZONE C</b>
+                            </p>
+                            <p>Duration: <b>1HR</b>
+                            </p>
+                            <p class="small-text">VALID UNTIL: 2 AUGUST</p>
+                        </div>
+                        <div class="right-float">
+                            <p>$7.00</p>
+                            <p class="barcode">*313444*</p>
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#planner-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myalert">Planner</a>
+                    </li>
+                    <li><a href="#shows-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myevent">Events</a>
+                    </li>
+                    <li><a href="#ticket-page" class="btn-nav ui-nodisc-icon" data-icon="fa-my-ticket">Tickets</a>
+                    </li>
+                    <li><a href="#map-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myplane">Map</a>
+                    </li>
+                    <li> <a href="#help-page" class="btn-nav ui-nodisc-icon" data-icon="fa-myhelp">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End tickets Page-->
+
+      <!--MapsPage -->
+    <div data-role="page" id="map-page">
+        <div data-role="panel" id="panel" data-position="left" data-theme="b" data-display="overlay">
+      
+            <ul data-role="listview">
+                <li data-icon="fa-myplane"><a href="#map-page" data-ajax="false" class="btn-nav ui-nodisc-icon">Map</a> </li>
+                <li data-icon="fa-myalert"><a href="#planner-page" data-ajax="false" class="btn-nav ui-nodisc-icon">Planner</a>
+                </li>
+                <li data-icon="fa-my-ticket"><a href="#ticket-page" class="btn-nav ui-nodisc-icon" >Tickets</a>
+                <li data-icon="fa-myevent"><a href="#shows-page" data-ajax="false" class="btn-nav ui-nodisc-icon">Events</a> </li>
+                <li data-icon="fa-myhelp"><a href="#help-page" data-ajax="false" class="btn-nav ui-nodisc-icon">Help</a> </li>
+                </li>
+            </ul>
+        </div>
+        <div data-role="panel" id="pmenu"  data-position="right" data-theme="b" data-display="overlay">
+            <ul data-role="listview">
+                <li data-icon="fa-my-find-me"><a href="#" id="showPosition" class="btn-nav ui-nodisc-icon menuListLegend">Find Me</a>
+                </li>
+                <li data-icon="fa-my-refresh"><a href="#" id="refreshBtn" class="btn-nav ui-nodisc-icon menuListLegend">Refresh</a>
+                </li>
+                <li data-icon="fa-my-markers"><a href="#" id="showMarkers" class="btn-nav ui-nodisc-icon menuListLegend">Markers</a>
+                </li>
+             
+              <div class="add-pad-top"></div>
+                <li data-icon="fa-myevent"><a href='#' class="menuListLegend" id='filter-all'>All</a>
+                </li>
+                <li data-icon="fa-food-marker"><a href='#' class="menuListLegend" id='filter-food'>Food</a>
+                </li>
+                <li data-icon="fa-utility-marker"><a href='#' class="menuListLegend" id='filter-utility'>Utility</a>
+                </li>
+                <li data-icon="fa-garden-marker"><a href='#' class="menuListLegend" id='filter-garden'>Garden</a>
+                </li>
+                <li data-icon="fa-outdoor-marker"><a href='#' class="menuListLegend" id='filter-outdoor'>Outdoor</a>
+                </li>
+                <li data-icon="fa-shop-marker"><a href='#' class="menuListLegend" id='filter-shop'>Shopping</a>
+                </li>
+                <li data-icon="fa-parking-marker"><a href='#' class="menuListLegend" id='filter-parking'>Parking</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div data-role="header" data-position="fixed" class="headers-custom">
+            <a href="#panel" class="topBtn ui-btn ui-icon-fa-mymenu ui-btn-icon-notext ui-nodisc-icon ui-corner-all"></a>
+            <a href="#pmenu" data-rel="popup" data-position-to="window" class="topBtn ui-btn ui-icon-fa-mydown-white ui-btn-icon-notext ui-nodisc-icon ui-corner-all"></a>
+            <h1 class="h1-custom">MAP</h1>
+        </div>
+        <!-- Map Canvas-->
+        <div id="map">
+            <!-- Map Loads here-->
+        </div>
+        <div data-role="footer" data-position="fixed" id="footer-map">
+        </div>
+    </div>
+    <!--End Maps Page-->
+
+
+    <!--help-page -->
+    <div data-role="page" id="help-page">
+        <!-- /header -->
+        <div data-role="main" class="ui-content">
+            <h1 class="h1-custom">This is the help page</h1>
+            <div class="add-pad-top"></div>
+            <p style="font-weight:300; font-size:14px;" class="txt-center">The <b>Rand Show</b> is destined to give fun and fiesta with the presence of attractive events, stunt performances, stage performances, animals zone, competitions and contests and other fun activities.</p>
+            <div class="add-pad-top"></div>
+            <a href="#planner-page" data-role="button" style="margin: 0 auto;" class="ui-shadow" data-theme="a">
+             Get Started <i class="fa fa-arrow-circle-right"></i>
+            </a>
+        </div>
+    </div>
+    <!--end help-page -->
+</body>
+<script type="text/javascript" src="js/myMap.js"></script>
+<script type="text/javascript" src="js/swipeList.js"></script>
+<script src="//use.typekit.net/phr4ovx.js"></script>
+<script>
+try {
+    Typekit.load();
+} catch (e) {}
+</script>
+
+</html>

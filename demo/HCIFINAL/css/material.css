@@ -1,0 +1,255 @@
+/* HEADERS */
+
+#home-page {
+    background-color: #880E4F !important;
+    color: #FFFFFF !important;
+}
+
+#panel,#pmenu {
+  
+   
+       min-height: 40px!important;
+        margin-top: 57px!important;
+       
+             width: 40%!important;
+             opacity: 0.9;
+}
+#pmenu{
+    background-color: #FFFFFF;
+}
+
+.events-list{
+    background-color:#E91E63!important; 
+    border-color:#E91E63!important;
+  
+}
+
+.headers-custom {
+    background-color: #880E4F !important;
+    border-color: #880E4F !important;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.accent-color-indigo {
+    color: #C5CAE9;
+}
+
+
+.footers-custom {
+    overflow: hidden;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+#tickets-tab {
+    font-weight: 500;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+#events-tab {
+    font-weight: 500;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+/* MAP */
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#search {
+    color: #212121 !important;
+}
+/*END MAP */
+/* LIST VIEW */
+
+.listImage {
+    padding: 15px!important;
+}
+
+.eventImage {
+    padding: 5px!important;
+    margin-top: 15px !important;
+}
+
+.libg {
+    background-color: #FFFFFF !important;
+    padding: 5px!important;
+    margin: 5px !important;
+}
+
+.libgPlanner {
+    background-color: #FFFFFF !important;
+    padding: 10px!important;
+    margin: 10px !important;
+}
+
+.planner-btn {
+    background-color: #FFEB3B!important;
+    border-color: #FFEB3B!important;
+    color: #212121!important;
+}
+/* NAV MENU LIST-GEOPAGE */
+
+.menuListLegend {
+    background: none !important;
+    color:  #880E4F  !important;
+    border: none !important;
+    font-size: 12px;
+    font-weight: 500!important;
+}
+.menuList {
+    background: none !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+.menuList:hover {
+    background-color: #E91E63!important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+.menuList:active {
+    background-color: none !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+/* TOP BUTTONS */
+
+.topBtn:hover {
+    background-color: #880E4F !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 400;
+}
+
+.topBtn:active {
+    background-color: #880E4F !important;
+    color: #FCE4EC !important;
+    font-weight: 400;
+}
+
+.topBtn {
+    background-color: #880E4F!important;
+    margin-top: 10px!important;
+}
+/* * NAV BUTTONS */
+
+.btn-nav {
+    background-color: #FCE4EC!important;
+    border-color: #FCE4EC!important;
+    color: #880E4F!important;
+}
+
+.btn-nav:hover {
+    background-color: #F8BBD0!important;
+    border: none !important;
+    color: #880E4F !important;
+}
+/* LIST ITEMS */
+
+#science_btn {
+    background-color: #64B5F6!important;
+    border-color: #64B5F6 !important;
+    color: #FFFFFF !important;
+}
+
+#science_btn:hover {
+    background-color: #FF4081!important;
+    border-color: #FF4081!important;
+    color: #FFFFFF !important;
+}
+
+#food_btn {
+    background-color: #7986CB!important;
+    border-color: #7986CB!important;
+    color: #FFFFFF !important;
+}
+
+#food_btn:hover {
+    background-color: #FF4081!important;
+    border-color: #FF4081!important;
+    color: #FFFFFF !important;
+}
+
+#garden_btn {
+    background-color: #BA68C8!important;
+    border-color: #BA68C8!important;
+    color: #FFFFFF !important;
+}
+
+#garden_btn:hover {
+    background-color: #FF4081!important;
+    border-color: #FF4081!important;
+    color: #FFFFFF !important;
+}
+
+#shop_btn {
+    background-color: #E040FB!important;
+    border-color: #E040FB !important;
+    color: #FFFFFF !important;
+}
+
+#shop_btn:hover {
+    background-color: #FF4081!important;
+    border-color: #FF4081!important;
+    color: #FFFFFF !important;
+}
+/* custom */
+
+.add-pap-right {
+    padding-right: 10px;
+}
+
+.add-pad-top {
+    padding-top: 10px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.h1-custom {
+    font-weight: 300 !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.right-float {
+    float: right;
+    text-align: right;
+}
+
+.left-float {
+    float: left;
+    text-align: left;
+    padding-right: 2px;
+}
+
+.center-box {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.small-text {
+    font-size: 8px;
+    font-weight: 300 !important;
+}
+
+.barcode {
+    font-family: Code39AzaleaFont;
+    font-size: 26px;
+    color: #212121;
+}

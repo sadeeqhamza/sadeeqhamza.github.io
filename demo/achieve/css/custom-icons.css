@@ -1,0 +1,503 @@
+.ui-icon-album:after
+{
+    background:url(images/album.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-archive:after
+{
+    background:url(images/archive.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-barley:after
+{
+    background:url(images/barley.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-blinds:after
+{
+    background:url(images/blinds.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-chart-pie:after
+{
+    background:url(images/chart-pie.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-content-save:after
+{
+    background:url(images/content-save.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-minus-circle:after
+{
+    background:url(images/minus-circle.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-poll:after
+{
+    background:url(images/poll.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-tooltip-edit:after
+{
+    background:url(images/tooltip-edit.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-view-dashboard:after
+{
+    background:url(images/view-dashboard.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-airballoon:after
+{
+    background:url(images/airballoon.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-album-white:after
+{
+    background:url(images/album-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-archive-white:after
+{
+    background:url(images/archive-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-barley-white:after
+{
+    background:url(images/barley-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-blinds-white:after
+{
+    background:url(images/blinds-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-chart-pie-white:after
+{
+    background:url(images/chart-pie-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-content-save-white:after
+{
+    background:url(images/content-save-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-minus-circle-white:after
+{
+    background:url(images/minus-circle-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-poll-white:after
+{
+    background:url(images/poll-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-tooltip-edit-white:after
+{
+    background:url(images/tooltip-edit-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-view-dashboard-white:after
+{
+    background:url(images/view-dashboard-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+
+.ui-icon-airballoon-white:after
+{
+    background:url(images/airballoon-white.svg) 50% 50% no-repeat;
+    background-size:24px 24px;
+}
+.ui-icon-btn-add-white:after {
+    background: url(images/plus-circle-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-btn-add:after {
+    background: url(images/plus-circle.svg);
+}
+.ui-icon-account-user:after {
+    background: url(images/account.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-checkbox-white:after {
+    background: url(images/checkbox-marked-circle-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-checkbox:after {
+    background: url(images/checkbox-marked-circle.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-find-me-white:after {
+    background: url(images/crosshairs-gps-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-find-me:after {
+    background: url(images/crosshairs-gps.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-magnify-white:after {
+    background: url(images/magnify-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-magnify:after {
+    background: url(images/magnify.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-markers-white:after {
+    background: url(images/map-marker-multiple-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-markers:after {
+    background: url(images/map-marker-multiple.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-refresh-white:after {
+    background: url(images/refresh-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-refresh:after {
+    background: url(images/refresh.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-right-white:after {
+    background: url(images/chevron-right-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-right:after {
+    background: url(images/chevron-right-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-taxi-white:after {
+    background: url(images/taxi-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+.ui-icon-taxi:after {
+    background: url(images/taxi.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-ticket-white:after {
+    background: url(images/ticket-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-ticket:after {
+    background: url(images/ticket.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-alert-white:after {
+    background: url(images/clipboard-text-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-alert:after {
+    background: url(images/clipboard-text.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-arrow-bold-down-white:after {
+    background: url(images/arrow-down-bold-circle-white.svq) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-arrow-bold-down:after {
+    background: url(images/arrow-down-bold-circle.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-chess:after {
+    background: url(images/chess.png) 60% 60% no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.ui-icon-christmas:after {
+    background: url(images/christmas.png) 60% 60% no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.ui-icon-documents:after {
+    background: url(images/documents.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.ui-icon-socks:after {
+    background: url(images/socks.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.ui-icon-dog:after {
+    background: url(images/dog.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.ui-icon-down-white:after {
+    background: url(images/chevron-down-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-down:after {
+    background: url(images/chevron-down.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-event-white:after {
+    background: url(images/google-maps-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-event:after {
+    background: url(images/google-maps.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-food-marker:after {
+    background: url(images/food.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-garden-marker:after {
+    background: url(images/garden.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-help-white:after {
+    background: url(images/help-circle-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-help:after {
+    background: url(images/help-circle.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-info:after {
+    background: url(images/shopping.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-info:after {
+    background: url(images/shopping.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-left-white:after {
+    background: url(images/chevron-left-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-left:after {
+    background: url(images/chevron-left.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-menu:after {
+    background: url(images/menu.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-monkey:after {
+    background: url(images/monkey.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.ui-icon-outdoor-marker:after {
+    background: url(images/outdoor.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-parking-marker:after {
+    background: url(images/parking.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-plane-white:after {
+    background: url(images/compass-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-plane:after {
+    background: url(images/compass.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-shop-marker:after {
+    background: url(images/shop.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-socks:after {
+    background: url(images/socks.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.ui-icon-spray:after {
+    background: url(images/spray.png) 50% 50% no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.ui-icon-account-circle-white:after {
+    background: url(images/account-circle-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-account-circle:after {
+    background: url(images/account-circle.svg) 50% 50% no-repeat;
+    background-size: 36px 36px;
+}
+
+.ui-icon-user-bulb-white:after {
+    background: url(images/lightbulb-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-bulb:after {
+    background: url(images/lightbulb.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-gaols-white:after {
+    background: url(images/view-day-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-goals:after {
+    background: url(images/view-day.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-home-white:after {
+    background: url(images/home-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-home:after {
+    background: url(images/home.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-smile-white:after {
+    background: url(images/emoticon-cool-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-smile:after {
+    background: url(images/emoticon-cool.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-sponge-white:after {
+    background: url(images/emoticon-poop-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-sponge:after {
+    background: url(images/emoticon-poop.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-tongue-white:after {
+    background: url(images/emoticon-tongue-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-tongue:after {
+    background: url(images/emoticon-tongue.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-trophy-white:after {
+    background: url(images/trophy-white.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+
+.ui-icon-user-trophy:after {
+    background: url(images/trophy.svg) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+.ui-icon-utility-marker:after {
+    background: url(images/toilet.png) 50% 50% no-repeat;
+    background-size: 24px 24px;
+}
+

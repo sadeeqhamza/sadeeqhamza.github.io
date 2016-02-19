@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sitemap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/DantataAndSawoe.css" rel="stylesheet">
+    <link href="css/zocial.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <!--logo-->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="fa fa-bars"></i></button>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInLeft" style="
+    padding-bottom: 20px;" /> </a>
+            </div>
+            <nav id="main_menu">
+                <div class="nav-collapse collapse">
+                    <ul class="nav nav-pills">
+                        <li class="dropdown active"><a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown"><a href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="dropdown"><a href="javascript:{}">Career</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="jobs.html">Job Opportunities</a></li>
+                                <li class="divider"></li>
+                                <li><a href="honours.html">Honours & Awards</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="news.html">Contracts</a>
+                        </li>
+                        <li class="dropdown"><a href="javascript:{}">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="abaji.html">Abuja Abaji Road</a></li>
+                                <li><a href="airstrips.html">Airstrips</a></li>
+                                <li class="divider"></li>
+                                <li><a href="benue.html">Benue State</a></li>
+                                <li><a href="bridges.html">Bridges</a></li>
+                                <li><a href="buildings.html">Buildings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="csr.html">CSR Corp Social Resp</a></li>
+                                <li class="divider"></li>
+                                <li><a href="design.html">Design & Planning</a></li>
+                                <li class="divider"></li>
+                                <li><a href="highway.html">Highways</a></li>
+                                <li class="divider"></li>
+                                <li><a href="infanstructure.html">Infrastructure</a></li>
+                                <li><a href="irrigation.html">Irrigation Projects</a></li>
+                                <li class="divider"></li>
+                                <li><a href="onex.html">ONEX Abuja</a></li>
+                                <li class="divider"></li>
+                                <li><a href="township.html">Township Roads</a></li>
+                            </ul>
+                            <li class="dropdown pull-right"><a href="contact.html">Contact Us</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="container intro_wrapper">
+            <div class="inner_content">
+                <h1 class="title">Sitemap</h1>
+                <h1 class="intro">
+    <a href=""><span>Home Page</span></a>
+        <br>
+        <a href =""><span>News & Contracts</span></a>
+        <br>
+        <a href =""><span> Contact Us</span></a>
+        <br>
+          <a href =""><span> Jobs</span></a>
+          <br>
+            <a href =""><span> Honours</span></a>
+            <br>
+              <a href =""><span> About</span></a>
+              <br>
+                <a href =""><span> Abaji</span></a>
+                <br>
+                  <a href =""><span> Airstrips</span></a>
+        
+    </h1>
+            </div>
+        </div>
+    </div>
+    <div class="pad10"></div>
+    <div id="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="copyright">
+                        © 2014 - DANTATA & SAWOE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#"><i class="go-top hidden-phone hidden-tablet fa fa-angle-double-up"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#ajax-contact-form").submit(function() {
+            var str = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "contact_form/contact_process.php",
+                data: str,
+                success: function(msg) {
+
+                    if (msg == 'OK') {
+                        result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+                        $("#fields").hide();
+                    } else {
+                        result = msg;
+                    }
+                    $('#note').html(result);
+                }
+            });
+            return false;
+        });
+    });
+    </script>
+    <script type="text/javascript" src="js/gmap3.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".google-maps").gmap3({
+            marker: {
+                address: "Abuja, Nigeria",
+                options: {
+                    icon: "img/marker.png"
+                }
+            },
+            map: {
+                options: {
+                    zoom: 14,
+                    scrollwheel: false,
+                    mapTypeControl: false,
+                    streetViewControl: false,
+                    scalControl: false,
+                    draggable: false
+                }
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+var User = function(name, email, birthdate) {
+   this.name = name;
+   this.email = email;
+   this.birthdate = birthdate;
+
+
+};
+var motivateMessage = function(message, mood) {
+   this.message = message;
+   this.mood = mood;
+};
+//Goal class
+var Goal = function(theName) {
+   this.id = 0;
+   this.name = theName;
+   this.tasks = [];
+   this.type ="Unknown Type";
+
+   this.getName = function(){
+    return this.name
+   }
+
+
+   this.setName = function(name){
+   this.name = name;
+   }
+   
+   this.setTask =function(taskDescription){
+   task = new Task(taskDescription);
+   this.tasks.push(task);
+
+   }
+
+   this.removeTask =function(theTask){
+   
+   delete theTask;
+
+   }
+
+   return this;
+
+   //   / a ---> Array.prototype ---> Object.prototype ---> null///
+};
+
+/////task/////////
+var Task = function(description) {
+
+   this.description = description;
+   complete = false;
+
+};
+
+
+Task.prototype = Object.create(Goal.prototype);
+/////
+function createGoal(theGoalToCreate) {
+
+   var goal;
+   goal = new Goal(theGoalToCreate);
+
+   saveToData(goal.name,goal);
+//try check if a data exists then checkexist()
+
+   return goal;
+
+}
+
+function saveData(theKey,theData) {
+   localStorage.setItem(theKey, JSON.stringify(theData));
+   console.log("Save Data: "+ theKey);
+
+}
+function getData(theKey){
+var data;    
+data = JSON.parse(localStorage.getItem(theKey));
+console.log("Get Data: "+ data);
+  return data;
+}
+
+function removeGoal(theGoalToDelete) {
+      var delGoal;
+      var url
+      delGoal = theGoalToDelete;
+      url = localStorage.key(delGoal);
+
+      console.log("Deleted this " + delGoal);
+
+      localStorage.removeItem(url);
+       loadSavedData();
+
+   }
+
+
+   //////////
+
+function saveTask(goal, theTaskToAdd) {
+      temp = new Task(theTaskToAdd);
+
+      currentGoal = goal;
+      // localstorage.currentGoal.tasks.push(theTaskToAdd);
+      localStorage.setItem(goalData, JSON.stringify(temp));
+      console.log(currentGoal.name + temp + " Added");
+
+   }
+   /////Find Out How to Save Tasks
+
+
+function findObject(objectName) {
+   var savedData;
+   var foundGoal;
+
+   savedData = JSON.parse(localStorage.getItem("goalData"));
+
+   for (var i = 0; i < savedData.length; i++) {
+
+      if (savedData[i].name == objectName) {
+         foundGoal = savedData[i];
+         console.log("Found: " + foundGoal.name);
+         break;
+
+      }
+
+
+   }
+   return foundGoal;
+}
+function checkExist(objectName) {
+   var dupData;
+   var dupGoal;
+
+   dupData = JSON.parse(localStorage.getItem("goalData"));
+
+console.log(dupData + "Check This");
+   for (var i = 0; i < localStorage.length; i++) {
+
+      if (dupData[i].name == objectName.name) {
+        dupGoal = dupData[i];
+         console.log("Found Duplicate: " + dupGoal.name);
+         removeGoal(dupGoal);
+        
+ loadSavedData();
+         break;
+
+      }
+
+
+   }
+  
+}
+

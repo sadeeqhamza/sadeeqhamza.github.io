@@ -1,0 +1,179 @@
+
+
+.ui-icon-fa-glass:after {
+	background-image: url("data:image/svg+xml;charset=UTF8;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIG92ZXJmbG93PSJhdXRvIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgYmFzZVByb2ZpbGU9InRpbnkiIHNwYWNlPSJwcmVzZXJ2ZSI+DQogIDxwYXRoIGQ9Ik0xNjk5IDEzNTAgUTE2OTkgMTMxNSAxNjU2IDEyNzIgTDEwMjQgNjQwIEwxMDI0IC0xMjggTDEzNDQgLTEyOCBRMTM3MCAtMTI4IDEzODkgLTE0NyBRMTQwOCAtMTY2IDE0MDggLTE5MiBRMTQwOCAtMjE4IDEzODkgLTIzNyBRMTM3MCAtMjU2IDEzNDQgLTI1NiBMNDQ4IC0yNTYgUTQyMiAtMjU2IDQwMyAtMjM3IFEzODQgLTIxOCAzODQgLTE5MiBRMzg0IC0xNjYgNDAzIC0xNDcgUTQyMiAtMTI4IDQ0OCAtMTI4IEw3NjggLTEyOCBMNzY4IDY0MCBMMTM2IDEyNzIgUTkzIDEzMTUgOTMgMTM1MCBROTMgMTM3MyAxMTEgMTM4Ni41IFExMjkgMTQwMCAxNDkgMTQwNCBRMTY5IDE0MDggMTkyIDE0MDggTDE2MDAgMTQwOCBRMTYyMyAxNDA4IDE2NDMgMTQwNCBRMTY2MyAxNDAwIDE2ODEgMTM4Ni41IFExNjk5IDEzNzMgMTY5OSAxMzUwIHoiIHBhdGhMZW5ndGg9IjAiIGZpbGw9IldoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjE3MjMyNUUtMDcsIC0wLjU3MTQyNzUpIHNjYWxlKDAuMDA4OTI4NTcyLCAtMC4wMDg5Mjg1NzIpIHRyYW5zbGF0ZSgwLCAtMTUzNikiIC8+DQo8L3N2Zz4=");
+	background-repeat: no-repeat;
+}
+.ui-nosvg .ui-icon-fa-glass:after {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVDhPY/j//78AECcAcQOJ2IABBP79+2cB5JAMgPr2gw0AASAf5AKiAVDzeSAlANUOAUABogzBqhkGgBJ4DcGrGQaACrAaQpRmGAAqRDGEJM0wANQAiiqQ5vckawYBoCawK4AG3IcKkQZGDSDTAKDiDCDeD8XXoQZ8RxJbDxRSgCrHBEDJACBGz7boGClNMDAAALSZxVRVVQRkAAAAAElFTkSuQmCC");
+}
+.ui-icon-fa-myinfo:after {
+  background: url(images/shopping.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-food-marker:after {
+  background: url(images/food.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-utility-marker:after {
+  background: url(images/toilet.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-garden-marker:after {
+  background: url(images/garden.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-outdoor-marker:after {
+  background: url(images/outdoor.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-shop-marker:after {
+  background: url(images/shop.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-parking-marker:after {
+  background: url(images/parking.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+
+
+.ui-icon-fa-myplane:after {
+  background: url(images/compass.svg) 50% 50% no-repeat;
+  
+	background-size:24px 24px;
+}
+.ui-icon-fa-myplane-white:after {
+  background: url(images/compass-white.svg) 50% 50% no-repeat;
+  
+	background-size:24px 24px;
+}
+.ui-icon-fa-myhelp:after {
+  background: url(images/help-circle.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myhelp-white:after {
+  background: url(images/help-circle-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-myalert:after {
+  background: url(images/clipboard-text.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myalert-white:after {
+  background: url(images/clipboard-text-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myevent:after {
+  background: url(images/google-maps.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myevent-white:after {
+  background: url(images/google-maps-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-mymenu:after {
+  background: url(images/ic_menu_white_24dp.png) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-myarrow-bold-down-white:after {
+  background: url(images/arrow-down-bold-circle-white.svq) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myarrow-bold-down:after {
+  background: url(images/arrow-down-bold-circle.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-mydown-white:after {
+  background: url(images/chevron-down-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-mydown:after {
+  background: url(images/chevron-down.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-right-white:after {
+  background: url(images/chevron-right-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-right:after {
+  background: url(images/chevron-right-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-myleft-white:after {
+background: url(images/chevron-left-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-myleft:after {
+  background: url(images/chevron-left.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-find-me:after {
+background: url(images/crosshairs-gps.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-find-me-white:after {
+background: url(images/crosshairs-gps-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-magnify:after {
+background: url(images/magnify.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-magnify-white:after {
+background: url(images/magnify-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-markers:after {
+background: url(images/map-marker-multiple.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-markers-white:after {
+background: url(images/map-marker-multiple-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-btn-add:after {
+background: url(images/plus-circle.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+
+}
+.ui-icon-fa-my-btn-add-white:after {
+background: url(images/plus-circle-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-refresh:after {
+background: url(images/refresh.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-refresh-white:after {
+background: url(images/refresh-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-ticket:after {
+background: url(images/ticket.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-ticket-white:after {
+background: url(images/ticket-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+
+.ui-icon-fa-my-taxi:after {
+background: url(images/taxi.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}
+.ui-icon-fa-my-taxi-white:after {
+background: url(images/taxi-white.svg) 50% 50% no-repeat;
+	background-size:24px 24px;
+}

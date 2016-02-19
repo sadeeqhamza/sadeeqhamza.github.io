@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content='initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+    <link type="text/css" rel="stylesheet" href="css/custom-icons.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,500,100,300' rel='stylesheet' type='text/css'>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
+    <link href="css/material.css" rel='stylesheet' type='text/css'>
+    <!--jQuery library -->
+    <script src="//use.typekit.net/qso0bxn.js"></script>
+    <script>
+    </script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <!--jQuery Mobile library -->
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/display.js"></script>
+     <script src="js/create.js"></script>
+    <script src="js/beforeshow.js"></script>
+    <script src="js/shown.js"></script>
+    <script src="js/map.js"></script>
+</head>
+
+<body>
+    <!--home page -->
+    <div data-role="page" id="splash-page">
+        <!-- /header -->
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <h1 class="title text-center">Sign Up</h1>
+        </div>
+        <div data-role="main" class="ui-content" style="height:500px;">
+           
+                <div class="ui-field-contain" >
+                 <form id="signupform" data-ajax="false" class="ui-body ui-body-a ui-corner-all ui-shadow">
+                    <h1 class="subhead text-center pad-bottom-15">Fill the form below to get started</h1>
+                    <label class="caption" for="username">Full Name</label>
+                    <input type="text"  data-corners="false" name="username" id="name-input" placeholder="Mat Smith" value="" required>
+                    <label class="caption" for="useremail">Email</label>
+                    <input type="text"  data-corners="false" name="useremail" id="email-input" placeholder="MatSmith@example.com" value="">
+                    <label class="caption" for="userdate">Birthday</label>
+                    <input type="date"  data-corners="false" id="birth-input" name="userdate">
+                    <label class="caption" for="avatar-input">Pick Avatar</label>
+                    <input type="text" name="avatar-input" id="avatar-input" placeholder="Avatar Icon" value="">
+                    <a href="#" id="chess-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-chess ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="documents-icon" class="avatar-icons ui-btn ui-overlay-shadow ui-corner-all ui-icon-documents ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="spray-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-spray ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="monkey-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-monkey ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="christmas-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-christmas ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="socks-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-socks ui-btn-icon-notext ui-btn-inline"></a>
+                      </form>
+                </div>
+                 <div class="add-pad-top"></div>
+<a href="#" id="go-register" data-inline="true" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-checkbox-white ui-btn-icon-notext center-box "></a>
+        </div>
+    </div>
+    <!--end homepage -->
+    <!--dashboardPage -->
+    <div data-role="page" id="home-page">
+        <div data-role="panel" id="panel-nav" class="panel-menu" data-position="left" data-theme="a" data-display="overlay">
+   <div class="center-block" >
+              <img src="img/wallpaper.jpg" style="max-width: 275px;margin:-19px;padding-bottom:20px"/>
+            </div>
+          <ul data-role="listview" class="pad-bottom-15">
+                    <li><a href="#home-page" class="ui-btn ui-icon-user-home ui-btn-icon-left no-color"><p class="body-text">HOME</p></a>
+                    </li>
+                    <li><a href="#my-goals" class="ui-btn ui-icon-archive ui-btn-icon-left no-color"><p class="body-txt">GOALS</p></a>
+                    </li>
+                    <li><a href="#map-page" class="ui-btn ui-icon-plane ui-btn-icon-left no-color"><p class="body-txt">MAP</p></a>
+                    </li>
+                    <li><a href="#explore-page" class="ui-btn ui-icon-user-bulb-white ui-btn-icon-left no-color"><p class="body-txt">EXPLORE</p></a>
+                    </li>
+                    <li> <a href="#complete-page" class="ui-btn ui-icon-user-trophy ui-btn-icon-left no-color"><p class="body-txt">TROPHIES</p></a>
+                    </li>
+                </ul>
+        </div>
+        <div data-role="panel" id="panel-user" class="panel-menu" data-position="right" data-theme="a" data-display="overlay">
+            <h3 class="text-center">UPDATE DETAILS</h3>
+            <div class="ui-field-contain">
+                <form data-ajax="false" class="ui-body ui-body-a ui-corner-all ui-shadow">
+                    <label for="user">Username:</label>
+                    <input type="text" data-mini="true" name="user" id="update-name" value="" data-theme="a">
+                    <label for="email">email:</label>
+                    <input type="text" data-mini="true" name="email" id="update-email" value="" data-theme="a">
+                    <label for="userdate">Birthday</label>
+                    <input type="date" id="update-birth" name="userdate" value="" data-theme="a">
+                    <label for="avatar-input">Icon</label>
+                    <input type="text" data-mini="true" name="avatar-input" id="update-avatar" value="">
+                    <a href="#" id="chess-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-chess ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="documents-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-documents ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="spray-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-spray ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="monkey-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-monkey ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="christmas-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-christmas ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="socks-icon" class="avatar-icons ui-btn ui-shadow ui-corner-all ui-icon-socks ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="update-user" data-inline="true" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-checkbox-white ui-btn-icon-notext center-box "></a>
+                </form>
+            </div>
+        </div>
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <a href="#panel-nav" class="ui-btn ui-nodisc-icon ui-icon-menu ui-btn-icon-notext ui-btn-inline no-color"></a>
+            <h1 class="title text-center">Home</h1>
+            <a href="#panel-user" class="ui-btn ui-nodisc-icon ui-icon-account-user ui-btn-icon-notext ui-btn-inline no-color"></a>
+           
+        </div>
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-icon="false" data-inset="true" class="ui-shadow">
+                <li>
+                    <a class="white-btn" href="#">
+                        <img id="profile-pic" src="" class="listImage" alt="" />
+                    
+                            <h2 class="subhead" id="user-name"></h2>
+                            <p id="email-name"></p>
+                            <p id="birth-date"></p>
+                       
+                    </a>
+                </li>
+            </ul>
+           
+            <div class="ui-grid-b ui-corner-all ui-shadow">
+                <div class="ui-block-a">
+                    <div class="ui-bar ui-bar-b text-center" style="height:80px">
+                        <h2 class="subhead">Goals</h2>
+                        <br>
+                        <br>
+                        <h2 id="goal-count"></h2></div>
+                </div>
+                <div class="ui-block-b">
+                    <div class="ui-bar ui-bar-b text-center" style="height:80px">
+                        <h2 class="subhead">Achieved</h2>
+                        <br>
+                        <br>
+                        <h2 id="goal-complete">0</h2></div>
+                </div>
+                <div class="ui-block-c">
+                    <div class="ui-bar ui-bar-b text-center" style="height:80px">
+                        <h2 class="subhead">Trophies</h2>
+                        <br>
+                        <br>
+                        <h2 id="goal-complete">0</h2></div>
+                </div>
+            </div>
+            <h4 id="message-p" data-inset="false"  class="ui-bar ui-bar-a ui-corner-all bodytxt text-center"></h4>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+        </div>
+    </div>
+    <!--End dashboard Page-->
+    <!--my-goals -->
+    <div data-role="page" id="my-goals">
+        <div data-role="panel" id="panel-nav" class="panel-menu" data-position="left" data-theme="a" data-display="overlay">
+          <div class="center-block" >
+              <img src="img/wallpaper.jpg" class="panel_image" />
+            </div>
+            
+                <ul data-role="listview">
+                    <li><a href="#home-page" class="ui-btn ui-icon-user-home ui-btn-icon-left no-color"><p class="body-text">HOME</p></a>
+                    </li>
+                    <li><a href="#my-goals" class="ui-btn ui-icon-archive ui-btn-icon-left no-color"><p class="body-txt">GOALS</p></a>
+                    </li>
+                    <li><a href="#map-page" class="ui-btn ui-icon-plane ui-btn-icon-left no-color"><p class="body-txt">MAP</p></a>
+                    </li>
+                    <li><a href="#explore-page" class="ui-btn ui-icon-user-bulb-white ui-btn-icon-left no-color"><p class="body-txt">EXPLORE</p></a>
+                    </li>
+                    <li> <a href="#complete-page" class="ui-btn ui-icon-user-trophy ui-btn-icon-left no-color"><p class="body-txt">TROPHIES</p></a>
+                    </li>
+                </ul>
+           
+        </div>
+         <div data-role="popup" id="check-pop" data-arrow="true">
+                <p>You Just Checked in</p>
+            </div>
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <a href="#panel-nav" data-inline="true" class="ui-btn ui-icon-menu ui-btn-icon-notext no-color"></a>
+          <h1 class="title">Goals</h1>
+            <a href="#planner-page" class="ui-btn ui-icon-refresh-white ui-btn-icon-notext no-color "></a>
+        </div>
+        <div data-role="main" class="ui-content">
+            <ul id="goal-list" data-inset="true" data-filter="true" data-filter-placeholder="Search Goals..." data-role="listview">
+            </ul>
+            <a href="#new-goal-page" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-btn-add-white ui-btn-icon-notext  ui-overlay-shadow center-box ">NEW GOAL</a>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+        </div>
+    </div>
+    <!--End mygoals Page-->
+    <div data-role="page" id="new-goal-page">
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <a href="#my-goals" data-inline="true" class="ui-btn ui-icon-left-white ui-btn-icon-notext no-color"></a>
+            <h1 class="title">NEW GOAL</h1>
+        </div>
+        <div data-role="main" class="ui-content" style="min-height:480px;">
+            <div class="ui-field-contain">
+                <form data-ajax="false" class="ui-body ui-body-a ui-corner-all ui-shadow">
+                   <h1 class="subhead">Describe your goal, you can always edit it later.</h1>
+                    <label for="goalInput">Goal Title</label>
+                    <input type="text" id="goalInput" name="goalInput" value="">
+                    <label for="goalDescription">Description</label>
+                    <input type="text" name="goalDescription" id="goalDescription" value="">
+                    <label for="icon-input">Pick Icon</label>
+                    <input type="text" name="icon-input" id="icon-input" value="">
+                    <a href="#" id="icon-one" class="ui-btn ui-shadow ui-corner-all ui-icon-album-white ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="icon-two" class="ui-btn ui-shadow ui-corner-all ui-icon-barley-white ui-btn-icon-notext ui-btn-inline"></a>
+                    <a href="#" id="icon-three" class="ui-btn ui-shadow ui-corner-all ui-icon-airballoon-white ui-btn-icon-notext ui-btn-inline"></a>
+                  
+                </form>
+            </div>
+             <div class="add-pad-top"></div>
+              <a href="#" id="save-goal-btn" data-inline="true" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-checkbox-white ui-btn-icon-notext center-box "></a>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom ui-overlay-shadow">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="archive">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="plane">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="user-bulb">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--GoalPage -->
+    <div data-role="page" id="goal-page">
+        <div data-role="popup" id="goal-page-pop" class="ui-content" data-theme="b">
+            <p>Checked In</p>
+        </div>
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <a href="#" id="usercheckin" data-inline="true" class="ui-btn ui-icon-chart-pie ui-btn-icon-notext no-color"></a>
+            <h1 id="clicked-goal-name" class="title">Goal</h1>
+            <a href="#" id="notes-btn" data-inline="true" class="ui-btn ui-icon-alert ui-btn-icon-notext no-color"></a>
+        </div>
+        <div data-role="main" class="ui-content" id="goal-tab">
+            <p id="goal-description" class="ui-bar ui-bar-a ui-corner-all text-center">Goal</p>
+            <canvas id="myChart" width="360" height="300"></canvas>
+          
+            <a href="#" id="del-goal-btn" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-minus-circle-white ui-btn-icon-notext center-box"></a>
+        </div>
+        <div data-role="footer" class="footers-custom">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="archive">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="plane">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="user-bulb">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--PlacesPage -->
+    <!--NotesPage -->
+    <div data-role="page" id="notes-page">
+        <div data-role="header" class="headers-custom ui-overlay-shadow">
+            <a href="#" id="back-notes" data-inline="true" class="ui-btn ui-icon-left-white ui-btn-icon-notext no-color"></a>
+            <h1 class="title">Notes</h1>
+            <a href="#" id="save-note-btn" data-inline="true" class="ui-btn ui-icon-content-save ui-btn-icon-notext no-color"></a>
+        <label for="note-input">Task Title</label>
+     <div data-role="controlgroup" >
+<input type="text" class="title-input" data-corners="false" name="note-input" id="note-input" value="Title">
+ </div>
+        </div>
+         <a href="#" id="add-note-btn" data-inline="true" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-checkbox-white ui-btn-icon-notext center-box"></a>
+  
+        <div data-role="main" class="ui-content" style="min-height:400px;">
+                      <div data-role="fieldcontain">
+                 <div id="goal-notes" class="ui-bar ui-bar-a "></div>
+         
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="archive">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="plane">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="user-bulb">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--MAPPage -->
+    <div data-role="page" id="map-page">
+        <div data-role="panel" id="panel-map" class="panel-menu" data-position="right" data-theme="a" data-display="overlay">
+            <form>
+                <div style="padding:10px 20px;">
+                    <h3>New Goal</h3>
+                    <label for="map-goal-input">Title:</label>
+                    <input type="text" name="map-goal-input" id="map-goal-input" value="">
+                    <label for="map-desc-input">Description:</label>
+                    <input type="text" name="map-desc-input" id="map-desc-input" value="">
+                </div>
+            </form>
+            <a href="#" id="map-save" data-inline="true" class="btn-icons ui-btn ui-shadow ui-corner-all ui-icon-checkbox-white ui-btn-icon-notext center-box "></a>
+        </div>
+        <div data-role="header" data-position="fixed" class="headers-custom ui-overlay-shadow">
+            <a href="#" id="refresh-map" class="ui-btn ui-icon-refresh-white ui-btn-icon-notext no-color "></a>
+            <h1 class="title">MAP</h1>
+         
+        </div>
+        <div data-role="main" class="ui-content">
+            <div id="map" >
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="archive">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="plane">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="user-bulb">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Places Page-->
+    <!--explorePage -->
+    <div data-role="page" id="explore-page">
+        <div data-role="header" class="headers-custom ui-overlay-shadow">
+            <h1 class="title">Goals</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-theme="a" data-filter="true" style="overflow:auto;">
+                <li data-icon="btn-add-white" class="white-bg ui-shadow">
+                    <a href="#" id="science_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <h2>QUIT SMOKING</h2>
+                        <div class="left-float">
+                          
+                            <p class="small-text">How many cigarettes you have avoided</p>
+                            <p class="small-text">The money and time you have saved</p>
+                        </div>
+                    </a>
+                </li>
+                <li data-icon="btn-add-white" class="white-bg ui-shadow">
+                    <a href="#" id="science_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <h2>SCORE 500 GOALS</h2>
+                        <div class="left-float">
+                            <p class="small-text">Start monitoring how many goals you have scored</p>
+                            <p class="small-text">Real time grapth</p>
+                        </div>
+                    </a>
+                </li>
+                <li data-icon="btn-add-white" class="white-bg ui-shadow">
+                    <a href="#" id="science_btn" class="ui-nodisc-icon event-item ui-corner-all">
+                        <h2>LOOSE WEIGHT</h2>
+                        <div class="left-float">
+                            <p class="small-text">Offers you real-time stats, anytime, to help loose desired weight</p>
+                            <p class="small-text">Real Time Pie chart</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="user-bulb">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="event">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="plane">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Explore Page-->
+    <!--complete-page -->
+    <div data-role="page" id="complete-page">
+        <!-- /header -->
+        <div data-role="header" class="headers-custom ui-overlay-shadow">
+            <h1 class="title">Achievements</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h1 class="h1-custom">Trophies</h1>
+            <img src="img/bee.png" alt="bee" class="trophy-img" align="middle">
+            <div class="add-pad-top"></div>
+            <img src="img/spray.png" alt="spray" align="middle" class="trophy-img">
+        </div>
+        <div data-role="footer" data-position="fixed" class="footers-custom">
+            <div data-role="navbar" data-fullscreen="true">
+                <ul>
+                    <li><a href="#home-page" class="white-btn ui-nodisc-icon" data-icon="user-home">Home</a>
+                    </li>
+                    <li><a href="#my-goals" class="white-btn ui-nodisc-icon" data-icon="archive">Goals</a>
+                    </li>
+                    <li><a href="#map-page" class="white-btn ui-nodisc-icon" data-icon="event">Map</a>
+                    </li>
+                    <li><a href="#explore-page" class="white-btn ui-nodisc-icon" data-icon="user-bulb-white">Explore</a>
+                    </li>
+                    <li> <a href="#complete-page" class="white-btn ui-nodisc-icon" data-icon="user-trophy">Awards</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end complete-page -->
+</body>
+
+</html>

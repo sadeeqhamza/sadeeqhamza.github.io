@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Irrigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/DantataAndSawoe.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="fa fa-bars"></i></button>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInLeft" style="
+    padding-bottom: 20px;" /> </a>
+            </div>
+            <nav id="main_menu">
+                <div class="nav-collapse collapse">
+                    <ul class="nav nav-pills">
+                        <li class="dropdown"><a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown"><a href="aboutUs.html">About Us</a>
+                        </li>
+                        <li class="dropdown"><a href="javascript:{}">Career</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="jobs.html">Job Opportunities</a></li>
+                                <li class="divider"></li>
+                                <li><a href="honours.html">Honours & Awards</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="news.html">Contracts</a>
+                        </li>
+                        <li class="dropdown active"><a href="javascript:{}">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="abaji.html">Abuja Abaji Road</a></li>
+                                <li><a href="airstrips.html">Airstrips</a></li>
+                                <li class="divider"></li>
+                                <li><a href="benue.html">Benue State</a></li>
+                                <li><a href="bridges.html">Bridges</a></li>
+                                <li><a href="buildings.html">Buildings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="csr.html">CSR Corp Social Resp</a></li>
+                                <li class="divider"></li>
+                                <li><a href="design.html">Design & Planning</a></li>
+                                <li class="divider"></li>
+                                <li><a href="highway.html">Highways</a></li>
+                                <li class="divider"></li>
+                                <li><a href="infanstructure.html">Infrastructure</a></li>
+                                <li><a href="irrigation.html">Irrigation Projects</a></li>
+                                <li class="divider"></li>
+                                <li><a href="onex.html">ONEX Abuja</a></li>
+                                <li class="divider"></li>
+                                <li><a href="township.html">Township Roads</a></li>
+                            </ul>
+                            <li class="dropdown pull-right"><a href="contact.html">Contact Us</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="container intro_wrapper">
+            <div class="inner_content">
+                <h1 class="title">BAGWAI IRRIGATION PROJECT</h1>
+                <blockquote class="span4">D&S has been awarded the contract for the BAGWAI (Watari Dam) Irrigation Project by the Federal Ministry of Water Resources. The Contract concerns the rehabilitation, construction and completion of an Irrigation and Drainage system of about net 790ha irrigable land with water from the Bagwai Dam Reservoir.</blockquote>
+                <ul class="pager offset8">
+                    <li class="previous"> <a href="infanstructure.html">← Infrastructure</a> </li>
+                    <li class="next"> <a href="onex.html">Onex Abuja →</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container wrapper">
+        <div class="inner_content">
+            <div class="row">
+                <div class="projects">
+                    <div class="span6 offset3 element category01" data-category="category01">
+                        <div class="hover_img">
+                            <a href="img/Abaji Road/abaji01.jpg" data-rel="prettyPhoto[portfolio1]">
+                                <img src="img/Irrigation Projects/irrigation01.jpg" alt="" /></a>
+                        </div>
+                        <div class="item_description">
+                            <a href="single_portfolio.html"></a>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="copyright">
+                        DANTATA & SAWOE Construction Company (Nigeria) Ltd. © 2014 - DANTATA & SAWOE
+                        <br>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#"><i class="go-top hidden-phone hidden-tablet fa fa-angle-double-up"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('.projects').isotope({});
+    });
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $('div.element').hide();
+    });
+    var i = 0;
+    var int = 0;
+    $(window).bind("load", function() {
+        var int = setInterval("doThis(i)", 100);
+    });
+
+    function doThis() {
+        var imgs = $('div.element').length;
+        if (i >= imgs) {
+            clearInterval(int);
+        }
+        $('div.element:hidden').eq(0).fadeIn(100);
+        i++;
+    }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

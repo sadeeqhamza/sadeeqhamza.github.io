@@ -1,0 +1,244 @@
+ html {
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+ }
+ .ui-content{
+ 	min-height:480px;
+ }
+ 
+ .add-pad-top {
+     padding-top: 15px;
+ }
+ 
+ .add-pad-bottom {
+     padding-bottom: 15px;
+ }
+ 
+ .avatar-icons {
+     background-color: #FFF!important;
+     border: none!important;
+     font-size: 32px!important;
+ }
+ 
+ .avatar-icons:hover {
+     background-color: #C5CAE9!important;
+ }
+ 
+ .btn-icons {
+     background-color: #FF4081!important;
+     border: none!important;
+     font-size: 40px!important;
+ }
+ 
+ .btn-icons:hover {
+     background-color: #F50057!important;
+     border: none!important;
+     font-size: 40px!important;
+ }
+ 
+ .center-box {
+     margin: 0 auto!important;
+ }
+ 
+ .center-block {
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .footers-custom {
+     overflow: hidden;
+ }
+ 
+ .h1-custom {
+     font-size: 20px!important;
+     font-weight: 300!important;
+     text-align: center;
+ }
+ 
+ .headers-custom {
+     background-color: #00BCD4!important;
+     border-color:  #00BCD4!important;
+     overflow: visible!important;
+     margin-bottom: 20px!important;
+     text-align: left;
+     font-weight: 400!important;
+     color: #FFF!important;
+     min-height: 56px!important;
+ }
+ 
+ .headline {
+     font-size: 24px!important;
+     font-weight: 300;
+ }
+ 
+ .title {
+     font-size: 21px!important;
+      font-weight: 400;
+ }
+ 
+ .subhead {
+     font-size: 17px!important;
+     font-weight: 500;
+ }
+ 
+ .caption {
+     font-size: 13px!important;
+      font-weight: 500!important;
+ }
+ 
+ .bodytxt {
+     font-size: 15px!important;
+          color: #212121!important;
+
+ }
+ 
+ .left-float {
+     float: left;
+     padding-right: 15px;
+     text-align: left;
+ }
+ 
+ .stacked {
+     text-align: justify;
+ }
+ 
+ .white-btn {
+     background-color: #FFF!important;
+     border-color: #FFF!important;
+     color: #212121!important;
+ }
+ .panel_image{
+    max-width: 275px;margin:-19px;padding-bottom:20px;
+ }
+ 
+ .white-btn:hover {
+     background-color: #FFF!important;
+     border-color: #FFF!important;
+     color: #212121!important;
+     font-weight: 500;
+ }
+ 
+ .listImage {
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-bottom: 10px;
+ }
+ 
+ .medium-pink {
+     background-color: #E91E63!important;
+     border-color: #E91E63!important;
+     color: #FFF!important;
+ }
+ 
+ .medium-pink:hover {
+     background-color: #E91E63!important;
+     border-color: #E91E63!important;
+     color: #FFF!important;
+     font-weight: 500 !important;
+ }
+ 
+ .panel-menu {
+    background-color: #FFF!important;
+     color: #212121!important;
+     max-width: 320px!important;
+ }
+ 
+ .small-text {
+     font-size: 8px;
+     font-weight: 300!important;
+ }
+ 
+ .tabs-custom {
+     margin-left: -3px!important;
+     margin-top: -3px!important;
+     padding: 2px!important;
+ }
+ 
+ .text-center {
+     text-align: center!important;
+ }
+ 
+ .trophy-img {
+     display: block;
+     height: 128px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 128px;
+     padding-top: 5px;
+ }
+ 
+ .ui-input-search {
+     background-color: none!important;
+     margin: 10px;
+ }
+ 
+ .ui-input-text {
+     background-color: none!important;
+     margin-bottom: 15px!important;
+ }
+ 
+ .user-icons {
+     background-color: #FF80AB!important;
+     border: none!important;
+     font-size: 24px!important;
+ }
+ 
+ .user-icons:hover {
+     background-color: #8C9EFF!important;
+     border: none!important;
+     font-size: 24px!important;
+ }
+ 
+ .wall-img {
+     display: block;
+     height: 64px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 64px;
+     padding-top: 5px;
+ }
+ 
+ .white-bg {
+     background-color: #FFF!important;
+ }
+ .pad-bottom-15{
+    padding-bottom: 15px;
+ }
+ #map {
+     bottom: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+ }
+ 
+ #splash-page {
+     background-color: #F9F9F9!important;
+     color: #000!important;
+ }
+ 
+ .no-color,
+ .no-color:hover {
+     background-color: transparent!important;
+     border: none!important;
+           color: #212121!important;
+
+ }
+ 
+ .no-color:hover {
+     color: #727272!important;
+ }
+ 
+ 
+input[type="text"],input[type="date"]
+ textarea {
+     border-bottom: 1px solid;
+     outline: 0;
+     border-color: #d8d8d8!important;
+ }
+

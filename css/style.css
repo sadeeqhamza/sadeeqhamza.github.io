@@ -1,0 +1,7 @@
+body{
+      background-image: url("bg.png");
+    background-size: 1280px 800px;
+    min-height: 320px;
+      background-color: #E3E3E3!important;
+   /* background-position: 50% 50%;*/
+}

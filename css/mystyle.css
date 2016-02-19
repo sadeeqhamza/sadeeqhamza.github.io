@@ -1,0 +1,51 @@
+ @font-face {
+     font-family: 'forte';
+     src: url('forte.ttf');
+ }
+ 
+ header,
+ main,
+ footer {
+     padding-left: 240px;
+ }
+ 
+ @media only screen and (max-width: 992px) {
+     header,
+     main,
+     footer {
+         padding-left: 0;
+     }
+ }
+footer{
+    margin-top:130px!important;
+ }
+ @media only screen and (min-width: 800px) {}
+ 
+ #sideImage {
+     max-height: 80%;
+     width: 100%;
+ }
+ 
+ .topNav {
+     height: 122px;
+ }
+ 
+ .nav-wrapper {
+     line-height: 122px;
+ }
+ 
+ .pad-bottom {
+     padding-bottom: 20px!important;
+ }
+ 
+ .mar-top {
+     margin-top: 20px!important;
+ }
+ 
+ .button-collapse {
+     line-height: 140px;
+     margin-left: 20px;
+     left: 20px;
+ }
+ 
+
